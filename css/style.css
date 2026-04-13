@@ -1,0 +1,114 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+  background-color: #0d0d0d; /* negro suave */
+  color: #eaeaea; /* blanco suave */
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+#contenedor {
+  max-width: 700px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Frase inicial */
+h2 {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+/* Título */
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Poema */
+#poema {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* Párrafos */
+#poema p {
+  margin-bottom: 20px;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+/* Efecto sutil al pasar el mouse */
+#poema p:hover {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+/* Responsive (para celular) */
+@media (max-width: 600px) {
+  #contenedor {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #poema {
+    font-size: 14px;
+  }
+}
+
+
+/* BOTÓN */
+#botonAbrir {
+  background-color: transparent;
+  color: #eaeaea;
+  border: 1px solid #888;
+  padding: 12px 24px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+#botonAbrir:hover {
+  background-color: #eaeaea;
+  color: #0d0d0d;
+  border-color: #eaeaea;
+}
+
+/* CURSOR PARPADEANTE */
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  color: #eaeaea;
+  animation: parpadear 0.8s infinite;
+}
+
+@keyframes parpadear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
